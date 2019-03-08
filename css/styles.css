@@ -1,0 +1,125 @@
+body {
+  background-image: radial-gradient(circle at 50% 50%, #ffffff, #d7dbdf);
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 0 17px;
+  padding: 0 18px;
+}
+
+.logo {
+  display: inline-block;
+  width: 101px;
+  height: 13px;
+  background: url('../img/logo_tesla.svg') no-repeat 0 0;
+  background-size: contain; 
+  text-indent: -9999px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  background: #ffffff;
+  padding-bottom: 36px;
+  width: 290px;
+  color: #60697d;
+}
+
+.item-header {
+  background-color: #f8f9f9;
+  text-align: center;
+  padding: 22px 0 20px;
+  margin-bottom: 20px;
+
+}
+
+.item-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 17px;
+}
+
+.item-title::after {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  opacity: 0.3;
+  background-color: #60697d;
+  margin-top: 14px;
+}
+
+.item-photo {
+  width: 162px;
+}
+
+.list {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.list-item {
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.list-item:last-child {
+  margin-bottom: 0;
+}
+
+.item-footer {
+  text-align: center;
+}
+
+.item-footer::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  opacity: 0.3;
+  background-color: #60697d;
+  margin-bottom: 18px;
+}
+
+.item-footer-text {
+  font-size: 24px;
+  margin-bottom: 23px;
+}
+
+.button {
+  width: 126px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ea525c;
+  border: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.item-alt {
+  color: #ffffff;
+  background-color: rgb(115, 120, 125, 0.95);
+}
+
+.item-alt .item-header {
+  background-color: #656a72;
+}
+
+.item-alt .item-title::after, .item-alt .item-footer::before {
+  background-color: #ffffff;
+}
+
+.item-alt .button {
+  background-color: #37406c;
+}

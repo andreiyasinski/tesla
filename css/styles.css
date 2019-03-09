@@ -1,12 +1,26 @@
-body {
-  background-image: radial-gradient(circle at 50% 50%, #ffffff, #d7dbdf);
-  font-family: 'Lato', sans-serif;
+html {
+  min-height: 100%;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: radial-gradient(circle at 50% 50%, rgb(255, 255, 255, 0.1), #d7dbdf), url('../img/motor_bg_1.png');
+  background-position: 0 0, center 220px;
+  background-repeat: repeat, no-repeat;
+  background-size: contain;
+}
+
+/*
+.bg {
+  background: url('../img/motor_bg.png') center bottom no-repeat;
+  background-size: contain;
+}
+*/
 
 .header {
   display: flex;
   justify-content: flex-end;
-  margin: 24px 0 17px;
+  margin: 24px 0 25px;
   padding: 0 18px;
 }
 
@@ -25,17 +39,23 @@ body {
 }
 
 .item {
+  position: relative;
   background: #ffffff;
   padding-bottom: 36px;
   width: 290px;
   color: #60697d;
 }
 
+.item:not(.item-alt) {
+  z-index: 1;
+  right: -10px;
+}
+
 .item-header {
   background-color: #f8f9f9;
   text-align: center;
-  padding: 22px 0 20px;
-  margin-bottom: 20px;
+  padding: 22px 0 17px;
+  margin-bottom: 25px;
 
 }
 
@@ -45,6 +65,7 @@ body {
   align-items: center;
   font-size: 30px;
   margin-bottom: 17px;
+  font-weight: 400;
 }
 
 .item-title::after {
@@ -58,7 +79,7 @@ body {
 }
 
 .item-photo {
-  width: 162px;
+  height: 53px;
 }
 
 .list {
@@ -92,7 +113,7 @@ body {
 
 .item-footer-text {
   font-size: 24px;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
 }
 
 .button {
@@ -107,7 +128,13 @@ body {
   cursor: pointer;
 }
 
+.button-alt {
+  background-color: #37406c;
+}
+
 .item-alt {
+  left: -24px;
+  top: 44px;
   color: #ffffff;
   background-color: rgb(115, 120, 125, 0.95);
 }
@@ -120,6 +147,3 @@ body {
   background-color: #ffffff;
 }
 
-.item-alt .button {
-  background-color: #37406c;
-}
